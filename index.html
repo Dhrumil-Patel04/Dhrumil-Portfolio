@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Personal Portfolio Website</title>
+  <script src="https://kit.fontawesome.com/29fb593ce8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Navitation Bar-->
+  <header>
+    <div class="header">
+      <h1>Portfolio</h1>
+    </div>
+    <nav id="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <img class="close-icon" src="images/close icon.png" alt="" onclick="closemenu()">
+    </nav>
+    <input type="checkbox" id="darkmode-toggle">
+    <img class="menu-icon" src="images/menu icon.png" alt="" onclick="openmenu()">
+
+  </header>
+
+  <!--Hero Section-->
+  <section id="home">
+    <div id="container">
+      <div id="hero-title">Namaste(); I'm Dhrumil Patel</div>
+      <div id="hero-subtitle"> I really passionate and still will be deeply researching for IT sector and overall
+        industry.</div>
+      <div class="btn-bar">
+        <div class="first-btn">
+          <a href="images/Dhrumil update resume .pdf" download class="btn-editing">
+            <img src="images/download icon.png.png" alt="">
+            <span>Download</span><i>CV</i>
+          </a>
+        </div>
+        <div class="home-image">
+          <img src="images/Dhrumil picture.jpg" alt="">
+        </div>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.linkedin.com/in/dhrumil-patel-a72293362"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/dhrumil_04?igsh=NXEyeTJmbW14eWNm&utm_source=ig_contact_invite"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/dhrumil-patel-a72293362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/DDpatel04?t=Ch81dtCh59XZEn0gtSsiAQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--About Section-->
+  <section id="about">
+    <div id="container">
+      <div id="title-details">
+        <p id="streatlineLeft"></p>
+        <h2 id="title">About me</h2>
+        <p id="streatlineRight"></p>
+      </div>
+      <p id="about-me">Good in Knowledge</p>
+    </div>
+    <div id="about-content">
+      <div id="about-image">
+        <img src="images/Dhrumil patel 2.jpg" alt="">
+      </div>
+      <div id="about-content-text">
+        <h3>Faithfully:</h3>
+        <p id="about-content-text-1">
+          I am a passionate and dedicated individual with a strong interest in technology and its applications.
+          I have a solid foundation in programming Languages and a keen eye for detals
+        </p>
+        <p id="about-content-text-1">
+          I am always eager to Learn and grow, and I am excited to take on new challanges in the field of IT.
+          I am a quick Leaner and a team player, and I am committed to delivering high-quality work.
+          I am always Looking for oppertunities to expand my skill set and contribute to meaningful projects.
+          I am excited to be a part of the ever-envolving world of technology and to make a positive impact through my
+          work.
+        </p>
+        <h3>Education:</h3>
+        <li style="list-style: circle;">Intershala Training - 2025 (Full Stack Development)</li>
+        <li style="list-style: circle;">Ganpat University - 2025 (B.Tech)</li>
+        <li style="list-style: circle;">B.s Patel Polytechnic, Ganpat University - 2021 (Diploma in Computer)</li>
+        <button class="about-btn">Read more</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Skills section using Tailwind CSS-->
+  <section id="skills">
+    <div id="container">
+      <div id="title-details">
+        <p id="streatlineLeft"></p>
+        <h2 id="title">Skills</h2>
+        <p id="streatlineRight"></p>
+      </div>
+      <p id="about-me" class="text-center">Tech Stack</p>
+    </div>
+    <ul class="tech-stack-wrapper flex flex-wrap justify-center items-center gap-[40px]">
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/html.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">html</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/cssLogo.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">css</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer"
+            src="images/javaScript.png" alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">javascript</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/ReactLogo.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">react</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/java.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">java</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer"
+            src="images/bootstrapLogo.png" alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">bootstrap</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/css2.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">tailwind</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer"
+            src="images/githubLogo.png" alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">github</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/figmaLogo.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">figma</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer" src="images/Git-Icon.png"
+            alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">Git</span>
+        </div>
+      </li>
+      <li
+        class="tech-stack-box rounded-[30px] flex justify-center items-center border-[#292929] border-solid border-[1px] w-[190px] h-[190px]">
+        <div class="skill-item relative flex justify-center items-center">
+          <img class="w-[100%] overflow-clip flex justify-center items-center cursor-pointer"
+            src="images/node-js-logo.png" alt="">
+          <span class="names uppercase absolute  border-[#292929] border-solid border-[1px] rounded-[5px] flex justify-center items-center tracking-[3px]
+          text-base font-medium backdrop-blur-sm duration-[.2s] opacity-[0]">Node.js</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!--Service section-->
+  <section id="services">
+    <div id="container" class="service-container">
+      <div id="title-details">
+        <p id="streatlineLeft"></p>
+        <h2 id="title">Services</h2>
+        <p id="streatlineRight"></p>
+      </div>
+      <p id="about-me" class="text-center">What I do</p>
+    </div>
+    <div class="service-wrapper flex justify-center items-center">
+      <div class="service-box">
+        <img class="service-image1" src="images/web development 5.png" alt="">
+        <h3>Web Development</h3>
+        <p>I create responsive and user-friendly websites using the latest technologies.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-image2" src="images/app development2.png" alt="">
+        <h3>App Development</h3>
+        <p>I develop mobile applications for both Android and iOS platforms.</p>
+      </div>
+      <div class="service-box">
+        <img class="service-image3" src="images/graphic design.png" alt="">
+        <h3>Graphic Design</h3>
+        <p>I design visually appealing graphics and branding materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Project section-->
+
+  <section id="projects">
+    <div id="container">
+      <div id="title-details">
+        <p id="streatlineLeft"></p>
+        <h2 id="title">Projects</h2>
+        <p id="streatlineRight"></p>
+      </div>
+      <p id="about-me" class="text-center">My Work</p>
+    </div>
+    <div class="project-wrapper">
+      <!-- <div class="project-section1"> -->
+      <h2>Completed Projects</h2>
+      <h4>From My Personal thoughts and experience</h4>
+      <div class="project-container">
+        <div class="project-box">
+          <video src="video/FoodDelivery.react.mp4" aria-atomic="true" autoplay="true" muted="true"></video>
+          <h3>Food Delivery Frontend Development</h3>
+          <p>This food website built on React.js has used react-router-dom, hooks, context API and creat context to make
+            it easy.</p>
+          <span class="project-tag">React</span>
+        </div>
+        <div class="project-box">
+          <video src="video/Portfolio.react.mp4" aria-atomic="true" autoplay="true" muted="true"></video>
+          <h3>Personal Portfolio</h3>
+          <p>created with a lot of efforts, thoughts and guide. Different packages such a react-simple-typewriter,
+            framer-motion, react-icons, @gsap/react, gsap, @gsap/all {scrollTrigger} and different Hooks.</p>
+          <span class="project-tag">React</span>
+        </div>
+        <div class="project-box">
+          <img class="project-image3" src="images/Weather image..png" alt="">
+          <div class="layer">
+            <h3 class="project-box-header">Weather Check</h3>
+            <p class="project-box-title">Took help of API_KEY and url, use async await And differents types Hooks</p>
+            <span class="project-tag">React</span>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+    </div>
+    <div class="project-wrapper">
+      <!-- <div class="project-section1"> -->
+      <h2>Featured Projects</h2>
+      <h4>learn and expertise skills from Internshala</h4>
+      <div class="project-container">
+        <div class="project-box">
+          <img class="project-image3" src="images/E-Commerce Image.jpg" alt="">
+          <div class="layer">
+            <h3 class="project-box-header">E Commerce Platform</h3>
+            <p class="project-box-title">Full Stack online store with product listings, cart and checkouts.</p>
+            <div class="Project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-box">
+          <img class="project-image3" src="images/YouTube Clone.jpg" alt="">
+          <div class="layer">
+            <h3 class="project-box-header">Youtube Clone</h3>
+            <p class="project-box-title">Complete Youtube CLone adding all the facilites Like, comment & Subscribe</p>
+            <div class="Project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-box">
+          <img class="project-image3" src="images/Weather Image.png" alt="">
+          <div class="layer">
+            <h3 class="project-box-header">Weather App</h3>
+            <p class="project-box-title">Live tracking of weather of all contries</p>
+            <span class="project-tag">Full Stack</span>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+    </div>
+  </section>
+
+  <!--Contact session-->
+
+  <section id="contact">
+    <div id="container">
+      <div id="title-details">
+        <p id="streatlineLeft"></p>
+        <h2 id="title">Contact</h2>
+        <p id="streatlineRight"></p>
+      </div>
+      <p id="about-me" class="text-center">Get in Touch</p>
+    </div>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your@email.com" required>
+      <textarea style="min-height: 145px;" name="message" rows="5" placeholder="Tell me about your Project"
+        required></textarea>
+      <div class="btn-details">
+        <img src="images/forward_20dp_B7B7B7_FILL0_wght400_GRAD0_opsz20.png" alt="">
+        <button class="contact-btn" type="submit">submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!--Footer secion-->
+
+  <section id="footer">
+    <div class="footer-container">
+      <p>&copy; 2023 Dhrumil Patel. All rights reserved.</p>
+      <div class="social-icons">
+        <!-- <a href="https://www.instagram.com/dhrumil_04?igsh=NXEyeTJmbW14eWNm&utm_source=ig_contact_invite"
+            target="_blank" rel="noopener nareferrer"><img src="images/instagram.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/dhrumil-patel-a72293362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" rel="noopener nareferrer"><img src="images/317750_linkedin_icon.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/dhrumil-patel-a72293362"
+            target="_blank" rel="noopener nareferrer"><img src="images/github-icon.png" alt="GitHub"></a> -->
+        <a href="">
+          <img src="images/call icon.png" alt="">
+        </a>
+        <a href="">
+          <img src="images/mail icon.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+    var navBar = document.getElementById("nav");
+
+    function openmenu() {
+      navBar.style.right = "0px";
+    }
+    function closemenu() {
+      navBar.style.right = "200px";
+    }
+  </script>
+</body>
+
+</html>
